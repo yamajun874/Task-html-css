@@ -181,7 +181,7 @@ header {
   grid-row: 1/3;
   grid-column: 1/2;
   background: rgb(151, 9, 85);
-  text-align: center;
+  /* text-align: center; */
   padding: 0 5px;
 }
 
@@ -212,14 +212,21 @@ header {
 
 .item1 .service-pics {
   padding-top: 20px;
+  margin: 0 auto;
+  display: block;
 }
 
-.item2 .service-pics {
-  margin-right: 10px;
+.item1 .service-item-ttl {
+  text-align: center;
 }
 
-.item3 .service-pics {
-  margin-right: 10px;
+.item1 .service-item-message {
+  padding: 0 30px;
+}
+
+.item2,
+.item3 {
+  padding: 0 10px;
 }
 
 /* blogタグが始まる */
@@ -260,6 +267,23 @@ header {
   border-radius: 20px 20px 0 0;
 }
 
+.blog-image {
+  position: relative;
+  width: 100%;
+}
+
+.blog-image-ttl {
+  color: white;
+  background: rgb(151, 9, 85);
+  width: 25%;
+  text-align: center;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  border-radius: 20px 0 0 0;
+  padding: 10px 0;
+}
+
 .blog-card-wrapper {
   background: white;
   border-radius: 0 0 20px 20px;
@@ -270,9 +294,7 @@ header {
 .blog-message {
   color: rgba(112, 110, 110, 0.829);
   font-size: 16px;
-  /* width: 240px;
-  margin: 20px auto; */
-  /* text-align: center; */
+  padding: 0 20px;
   line-height: 25px;
 }
 
@@ -282,4 +304,155 @@ header {
   color: rgba(139, 138, 138, 0.829);
   font-size: 13px;
   padding: 0 15px;
+}
+
+.blog-footer {
+  margin: 20px auto;
+  text-align: center;
+  background: white;
+  color: rgb(151, 9, 85);
+  width: 20%;
+  border: 2px solid rgb(151, 9, 85);
+  border-radius: 20px;
+  padding: 10px 0;
+}
+
+/* companyタグ始まる */
+
+.company {
+  width: 60%;
+  margin: 30px auto;
+}
+
+.company-logo {
+  font-family: "Indie Flower", cursive;
+  color: rgb(151, 9, 85);
+}
+
+.company-ttl {
+  color: rgba(112, 110, 110, 0.829);
+  margin-top: -5px;
+}
+
+.company table {
+  border-collapse: collapse;
+  color: rgba(112, 110, 110, 0.829);
+  width: 100%;
+}
+
+.company th {
+  background: rgb(228, 224, 224);
+  text-align: left;
+  border-right: 1px solid rgb(216, 208, 208);
+  padding: 15px 10px;
+  width: 30%;
+}
+
+.company tr {
+  border-left: 1px solid rgb(216, 208, 208);
+  border-right: 1px solid rgb(216, 208, 208);
+  border-top: 1px solid rgb(216, 208, 208);
+}
+
+.company td {
+  padding-left: 15px;
+}
+
+.company tr:last-child {
+  border-bottom: 1px solid rgb(216, 208, 208);
+}
+
+/* infoタグ始まる */
+
+.info {
+  width: 100%;
+  display: flex;
+  margin: 30px 0;
+}
+
+.recruit {
+  width: 50%;
+  position: relative;
+}
+
+.recruit-pics {
+  width: 100%;
+}
+
+.recruit-message,
+.interview-message {
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.interview {
+  width: 50%;
+  position: relative;
+}
+
+.interview-pics {
+  width: 100%;
+}
+
+/* formタグ始まる */
+
+.form {
+  width: 30%;
+  margin: 50px auto;
+}
+
+.form-ttl {
+  color: rgba(112, 110, 110, 0.829);
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-btn {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgb(226, 46, 142),
+    rgba(146, 8, 82, 0.705)
+  );
+  text-align: center;
+  width: 250px;
+  margin: 10px auto;
+  padding: 20px 0;
+  border-radius: 30px;
+  box-shadow: 0 5px 1px rgb(119, 3, 119);
+  position: relative;
+}
+
+.form-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  content: "";
+  background: url("../image2/mailicon.svg") no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.form-item {
+  background: rgb(151, 9, 85);
+  width: 2px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+/* footer始まる */
+
+footer {
+  background: rgb(240, 233, 233);
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(112, 110, 110, 0.829);
 }
