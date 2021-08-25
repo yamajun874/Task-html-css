@@ -1,0 +1,285 @@
+/* headerタグ始まる */
+.header-list {
+  display: flex;
+  color: grey;
+  font-weight: bold;
+}
+
+.header-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 30px;
+}
+
+.header-logo {
+  width: 20%;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.ttl {
+  width: 60%;
+  position: relative;
+  height: 540px;
+}
+
+.ttl img {
+  position: absolute;
+  left: 65%;
+  width: 100%;
+  display: block;
+}
+
+.message-wrapper {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 100%;
+}
+
+.ttl-message {
+  color: rgb(151, 9, 85);
+  line-height: 50px;
+  font-size: 55px;
+  font-family: "Indie Flower", cursive;
+}
+
+.ttl-message span {
+  color: rgba(16, 168, 168, 0.897);
+}
+
+.ttl-coment {
+  color: rgb(151, 9, 85);
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+.ttl-coment span {
+  color: rgba(16, 168, 168, 0.897);
+}
+
+.ttl-coment2 {
+  color: grey;
+  font-size: 13px;
+}
+
+/* newsタグ始まる */
+.news {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.news-logo {
+  font-family: "Indie Flower", cursive;
+  color: rgb(151, 9, 85);
+}
+
+.news-ttl {
+  color: rgba(112, 110, 110, 0.829);
+  margin-top: -5px;
+}
+
+.news-content {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  margin: 30px 0;
+  padding-bottom: 15px;
+}
+
+.news-items {
+  color: rgba(112, 110, 110, 0.829);
+  border-bottom: 1px solid grey;
+  padding: 5px 0 15px 0;
+}
+
+.news-items-info {
+  color: white;
+  background: rgb(151, 9, 85);
+  border-radius: 15px;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  margin: 0 30px;
+}
+
+/* aboutタグ始まる */
+.about {
+  background: rgb(240, 233, 233);
+  width: 100%;
+}
+
+.about-logo {
+  font-family: "Indie Flower", cursive;
+  color: rgb(151, 9, 85);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.about-ttl {
+  color: rgba(112, 110, 110, 0.829);
+  margin-top: -5px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.about-pics {
+  width: 25%;
+}
+
+.about-message {
+  color: rgba(112, 110, 110, 0.829);
+  font-size: 15px;
+}
+
+.about-message-1 {
+  line-height: 25px;
+}
+
+.about-message-2 {
+  line-height: 25px;
+}
+
+/* serviceタグが始まる */
+.service {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.service-logo {
+  font-family: "Indie Flower", cursive;
+  color: rgb(151, 9, 85);
+}
+
+.service-ttl {
+  color: rgba(112, 110, 110, 0.829);
+  margin-top: -5px;
+}
+
+.service-content {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 220px 220px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item1 {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  background: rgb(151, 9, 85);
+  text-align: center;
+  padding: 0 5px;
+}
+
+.item2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background: rgba(150, 54, 105, 0.863);
+  display: flex;
+  align-items: center;
+}
+
+.item3 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background: rgb(134, 111, 123);
+  display: flex;
+  align-items: center;
+}
+
+.service-pics {
+  width: 150px;
+}
+
+.service-item {
+  color: white;
+  line-height: 25px;
+}
+
+.item1 .service-pics {
+  padding-top: 20px;
+}
+
+.item2 .service-pics {
+  margin-right: 10px;
+}
+
+.item3 .service-pics {
+  margin-right: 10px;
+}
+
+/* blogタグが始まる */
+
+.blog {
+  background: rgb(240, 233, 233);
+  width: 100%;
+}
+
+.blog-logo {
+  font-family: "Indie Flower", cursive;
+  color: rgb(151, 9, 85);
+}
+
+.blog-ttl {
+  color: rgba(112, 110, 110, 0.829);
+  margin-top: -5px;
+}
+
+.blog-main {
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blog-card {
+  width: 30%;
+}
+
+.blog-pics {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.blog-card-wrapper {
+  background: white;
+  border-radius: 0 0 20px 20px;
+  padding-top: 10px;
+  margin-top: -5px;
+}
+
+.blog-message {
+  color: rgba(112, 110, 110, 0.829);
+  font-size: 16px;
+  /* width: 240px;
+  margin: 20px auto; */
+  /* text-align: center; */
+  line-height: 25px;
+}
+
+.blog-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(139, 138, 138, 0.829);
+  font-size: 13px;
+  padding: 0 15px;
+}
